@@ -4,15 +4,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Beaglechat</title>
     <link rel="icon" type="image/png" href="./assets/images/favicon.png">
+    <style>
+        body {
+            flex: 1;
+            background-color: #F6AD64;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar {
+            background-color: #551F00;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 20px;
+        }
+
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+
+        .content-container {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #F6AD64;
+        }   
+
+        .about-us {
+            border: 1px solid black;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px;
+            max-width: 600px;
+            /* Adjust the max-width as needed */
+            background-color: white;
+        }
+
+        .about-us p {
+            text-align: center;
+            font-size: 18px;
+            color: black;
+        }
+    </style>
 </head>
 
 <body>
-    <div style="flex: 1;flex-direction: row;background-color: aquamarine;align-items: center; ">
-        <p style="text-align: center;font-size: x-large;font-weight: 800;">
-            Beaglechat
-        </p>
+    <div class="navbar">
+        <a href="index.html" style="display: flex; align-items: center;">
+
+            <img src="./assets/images/logo.png" height="60" style="background-blend-mode: multiply;" />
+            <p
+                style="font-size: xx-large; color: white; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                Beaglechat</p>
+
+        </a>
+        <div>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Terms and Conditions</a>
+        </div>
+    </div>
+
+    <div class="content-container">
+        <div class="about-us">
+            <p style="font-size: x-large;"><strong>About Beaglechat</strong></p>
+            <p style="text-align: justify;font-size: large;">BeagleChat is a revolutionary platform designed for
+                real-time, anonymous
+                conversations. With BeagleChat,
+                users can engage in meaningful discussions, share thoughts, and connect with others without the
+                constraints of identity or judgment.</p>
+            <p style="font-size: large;""><strong> Features:</strong></p>
+            <ul style=" font-size: large;">
+                <li>Real-Time Interaction</li>
+                <li>Anonymous Profiles</li>
+                <li>Dynamic Chat Rooms</li>
+                <li>Expressive Messaging</li>
+                <li>Moderated Environment</li>
+                <li>Customizable Experience</li>
+                <li>Cross-Platform Accessibility</li>
+                <li>Encrypted Communication</li>
+                </ul>
+            <p style=" text-align: justify;font-size: large;">Join BeagleChat today and embark on a journey of
+                discovery, connection,
+                and
+                meaningful conversations.
+                BeagleChat: Where conversations come alive.</p>
+        </div>
     </div>
 </body>
 
