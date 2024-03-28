@@ -4,13 +4,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Terms and Conditions</title>
+    <title>Terms & Conditions</title>
     <link rel="icon" type="image/png" href="./assets/images/beaglechat.png">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+        body {
+            flex: 1;
+            background-color: #f6ad64;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
 
+        .navbar {
+            background-color: #551f00;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 20px;
+        }
+
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+
+        .content-container {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f6ad64;
+        }
+
+        .about-us {
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px;
+            max-width: 600px;
+            background-color: white;
+        }
+
+        .about-us p {
+            text-align: center;
+            font-size: 18px;
+            color: black;
+        }
+    </style>
 </head>
 
-<body style="background-color: #F6AD64;">
+<body>
+    <div class="navbar">
+        <a href="index.html" style="display: flex; align-items: center;">
+            <img src="./assets/images/logo.png" height="60" style="background-blend-mode: multiply;" />
+            <p
+                style="font-size: xx-large; color: white; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                Beaglechat</p>
+        </a>
+        <div>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Terms and Conditions</a>
+        </div>
+    </div>
 
+    <div class="content-container">
+        <div class="about-us">
+            <p style="font-size: x-large;"><strong>Terms and Conditions</strong></p>
+            <p>Please read these terms and conditions carefully before using BeagleChat.</p>
+            <p><strong>Acceptance of Terms</strong></p>
+            <p>By accessing or using BeagleChat, you agree to be bound by these terms and conditions. If you do not
+                agree
+                with any part of these terms, you may not access the service.</p>
+            <p><strong>Use of Service</strong></p>
+            <p>BeagleChat is intended for personal, non-commercial use only. You may not use the service for any illegal
+                or unauthorized purpose.</p>
+            <p><strong>Intellectual Property</strong></p>
+            <p>All content included on BeagleChat, such as text, graphics, logos, images, and software, is the property
+                of BeagleChat and protected by copyright laws.</p>
+            <p><strong>Limitation of Liability</strong></p>
+            <p>BeagleChat is provided "as is" without any warranty of any kind. In no event shall BeagleChat be liable
+                for any damages arising out of the use of the service.</p>
+            <p><strong>Changes to Terms</strong></p>
+            <p>BeagleChat reserves the right to modify or replace these terms and conditions at any time. Your continued
+                use of the service after any such changes constitutes acceptance of the new terms.</p>
+            <p><strong>Contact Us</strong></p>
+            <p>If you have any questions or concerns regarding these terms and conditions, please feel free to reach out
+                to us at <a href="mailto:iglost999@gmail.com">iglost999@gmail.com</a>.</p>
+            <p>Thank you for using BeagleChat.</p>
+        </div>
+    </div>
 </body>
 
 </html>
