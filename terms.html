@@ -9,7 +9,6 @@
     <link rel="stylesheet" type="text/css" href="styles.css">
     <style>
         body {
-            flex: 1;
             background-color: #f6ad64;
             margin: 0;
             font-family: Arial, sans-serif;
@@ -35,7 +34,6 @@
         }
 
         .content-container {
-            flex: 1;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -43,17 +41,32 @@
         }
 
         .about-us {
-            border-radius: 10px;
-            padding: 20px;
-            margin: 20px;
-            max-width: 600px;
+            width: 100%;
+            max-width: none;
             background-color: white;
+            padding: 20px;
+            border-radius: 10px;
         }
 
         .about-us p {
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        .about-us p:first-child {
+            font-size: 20px;
+            margin-bottom: 20px;
             text-align: center;
-            font-size: 18px;
-            color: black;
+        }
+
+        .about-us a {
+            color: #0366d6;
+            text-decoration: none;
+        }
+
+        .about-us a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -62,7 +75,7 @@
 
     <div class="content-container">
         <div class="about-us">
-            <p style="font-size: x-large;"><strong>Terms and Conditions</strong></p>
+            <p><strong>Terms and Conditions</strong></p>
             <p>Please read these terms and conditions carefully before using BeagleChat.</p>
             <p><strong>Acceptance of Terms</strong></p>
             <p>By accessing or using BeagleChat, you agree to be bound by these terms and conditions. If you do not

@@ -16,35 +16,26 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
-            overflow: hidden;
-            /* Hide overflow content */
         }
 
         .container {
-            width: 50%;
+            width: 90%;
             background-color: white;
-            padding: 30px;
+            padding: 20px;
             border-radius: 10px;
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-            overflow-y: auto;
-            /* Enable vertical scrolling */
-            position: absolute;
-            top: 10%;
-            /* Position the container 10% from the top */
-            bottom: 10%;
-            /* Position the container 10% from the bottom */
-            height: 80%;
-            /* Set the height to 80% of the viewport */
         }
 
         .heading {
             text-align: center;
-            font-size: 28px;
+            font-size: 24px;
+            margin-top: 0;
         }
 
         .content {
             font-size: 16px;
             line-height: 1.6;
+            margin-bottom: 20px;
         }
 
         .content pre {
@@ -52,7 +43,6 @@
         }
 
         .footer {
-            margin-top: 20px;
             font-size: 14px;
             color: #666;
             text-align: center;
@@ -66,6 +56,18 @@
         .footer a:hover {
             text-decoration: underline;
         }
+
+        @media (max-width: 600px) {
+            .container {
+                width: 100%;
+                height: auto;
+                border-radius: 0;
+            }
+
+            .content {
+                font-size: 14px;
+            }
+        }
     </style>
 </head>
 
@@ -73,7 +75,7 @@
 
     <div class="container">
         <div class="content">
-            <p>Last Updated: 28-03-2024</p>
+            <p>Last Updated: 10-06-2024</p>
             <p class="heading"><strong>Privacy and Policy</strong></p>
             <p>BeagleChat is committed to respecting and protecting the privacy of its users. This Privacy Policy
                 outlines our approach to data collection and usage.</p>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report Issue</title>
+    <link rel="icon" type="image/png" href="./assets/images/beaglechat.png">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+        body {
+            background-color: #f6ad64;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .content-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f6ad64;
+            padding: 20px;
+        }
+
+        .report-form {
+            width: 100%;
+            max-width: 600px;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .report-form p {
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        .report-form p:first-child {
+            font-size: 20px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .report-form label {
+            display: block;
+            font-weight: bold;
+        }
+
+        .report-form input[type="text"],
+        .report-form input[type="file"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+        }
+
+        .report-form input[type="submit"] {
+            background-color: #551f00;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            width: 100%;
+        }
+
+        .report-form input[type="submit"]:hover {
+            background-color: #6e2900;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="content-container">
+        <div class="report-form">
+            <p><strong>Report Issue</strong></p>
+            <p>Please use the form below to report any issues you encounter. You can also upload a screenshot to help us
+                better understand the problem.</p>
+            <form action="#" method="post" enctype="multipart/form-data">
+                <label for="report-type">Report Type:</label>
+                <input type="text" id="report-type" name="report-type" placeholder="Enter report type">
+                <label for="screenshot">Upload Screenshot:</label>
+                <input type="file" id="screenshot" name="screenshot">
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
